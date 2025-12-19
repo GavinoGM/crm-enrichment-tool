@@ -1,0 +1,101 @@
+customer_id,email,first_name,last_name,company,industry,purchase_count,revenue,last_purchase_date,signup_date,status,city,country,age,gender
+C001,alice.johnson@email.com,Alice,Johnson,TechCorp,Technology,45,12500.00,2024-12-15,2022-03-10,active,New York,USA,34,F
+C002,bob.smith@email.com,Bob,Smith,RetailMax,Retail,8,2300.00,2024-11-20,2023-06-15,active,London,UK,42,M
+C003,carol.white@email.com,Carol,White,HealthPlus,Healthcare,62,18900.00,2024-12-18,2021-08-22,active,Toronto,Canada,38,F
+C004,david.brown@email.com,David,Brown,FinanceHub,Finance,3,890.00,2024-02-14,2023-11-05,inactive,Sydney,Australia,29,M
+C005,emma.davis@email.com,Emma,Davis,EcoGoods,Retail,28,6700.00,2024-12-10,2022-09-18,active,Berlin,Germany,31,F
+C006,frank.miller@email.com,Frank,Miller,BuildCo,Construction,15,4200.00,2024-10-05,2023-01-20,active,Paris,France,45,M
+C007,grace.wilson@email.com,Grace,Wilson,FashionFirst,Fashion,52,15600.00,2024-12-17,2022-05-12,active,Milan,Italy,27,F
+C008,henry.moore@email.com,Henry,Moore,AutoParts,Automotive,2,450.00,2023-09-18,2023-08-30,inactive,Chicago,USA,51,M
+C009,isabel.taylor@email.com,Isabel,Taylor,TechCorp,Technology,38,9800.00,2024-12-12,2022-11-03,active,San Francisco,USA,33,F
+C010,jack.anderson@email.com,Jack,Anderson,FoodMart,Food & Beverage,71,21300.00,2024-12-19,2021-04-17,active,Amsterdam,Netherlands,39,M
+C011,karen.thomas@email.com,Karen,Thomas,HealthPlus,Healthcare,19,5400.00,2024-11-28,2023-02-22,active,Dublin,Ireland,36,F
+C012,leo.jackson@email.com,Leo,Jackson,RetailMax,Retail,5,1200.00,2024-08-15,2024-01-10,at_risk,Los Angeles,USA,28,M
+C013,maria.white@email.com,Maria,White,TravelEase,Travel,44,13200.00,2024-12-14,2022-07-08,active,Barcelona,Spain,41,F
+C014,nathan.harris@email.com,Nathan,Harris,TechCorp,Technology,9,2700.00,2024-10-22,2023-09-14,active,Seattle,USA,30,M
+C015,olivia.martin@email.com,Olivia,Martin,EcoGoods,Retail,67,19500.00,2024-12-16,2021-12-05,active,Copenhagen,Denmark,35,F
+C016,paul.thompson@email.com,Paul,Thompson,FinanceHub,Finance,12,3600.00,2024-09-30,2023-04-18,active,Zurich,Switzerland,48,M
+C017,quinn.garcia@email.com,Quinn,Garcia,FashionFirst,Fashion,31,8900.00,2024-12-11,2022-10-25,active,Mexico City,Mexico,26,NB
+C018,rachel.martinez@email.com,Rachel,Martinez,BuildCo,Construction,4,980.00,2024-03-12,2023-12-08,inactive,Houston,USA,44,F
+C019,samuel.robinson@email.com,Samuel,Robinson,HealthPlus,Healthcare,55,16700.00,2024-12-18,2022-02-14,active,Singapore,Singapore,37,M
+C020,tara.clark@email.com,Tara,Clark,AutoParts,Automotive,1,230.00,2024-01-05,2023-11-22,inactive,Mumbai,India,32,F
+C021,uma.rodriguez@email.com,Uma,Rodriguez,TechCorp,Technology,48,14100.00,2024-12-15,2022-06-20,active,Austin,USA,29,F
+C022,victor.lewis@email.com,Victor,Lewis,FoodMart,Food & Beverage,24,7200.00,2024-12-08,2023-03-16,active,Stockholm,Sweden,43,M
+C023,wendy.lee@email.com,Wendy,Lee,RetailMax,Retail,7,1900.00,2024-11-15,2024-02-28,active,Seoul,South Korea,25,F
+C024,xavier.walker@email.com,Xavier,Walker,TravelEase,Travel,36,10800.00,2024-12-13,2022-08-09,active,Tokyo,Japan,40,M
+C025,yara.hall@email.com,Yara,Hall,EcoGoods,Retail,59,17800.00,2024-12-17,2021-11-12,active,Oslo,Norway,34,F
+C026,zach.allen@email.com,Zach,Allen,FinanceHub,Finance,6,1650.00,2024-07-20,2023-10-05,at_risk,Boston,USA,46,M
+C027,amy.young@email.com,Amy,Young,FashionFirst,Fashion,42,12600.00,2024-12-14,2022-04-03,active,London,UK,28,F
+C028,brian.king@email.com,Brian,King,BuildCo,Construction,11,3300.00,2024-10-18,2023-05-11,active,Toronto,Canada,50,M
+C029,chloe.wright@email.com,Chloe,Wright,HealthPlus,Healthcare,26,7800.00,2024-12-09,2023-01-07,active,Melbourne,Australia,33,F
+C030,daniel.lopez@email.com,Daniel,Lopez,AutoParts,Automotive,3,720.00,2024-04-22,2023-11-18,inactive,Madrid,Spain,38,M
+C031,ella.hill@email.com,Ella,Hill,TechCorp,Technology,51,15300.00,2024-12-16,2022-03-28,active,Dublin,Ireland,31,F
+C032,finn.scott@email.com,Finn,Scott,FoodMart,Food & Beverage,68,20400.00,2024-12-19,2021-09-15,active,Vienna,Austria,42,M
+C033,gina.green@email.com,Gina,Green,RetailMax,Retail,10,2800.00,2024-11-25,2023-07-19,active,Brussels,Belgium,27,F
+C034,hugo.adams@email.com,Hugo,Adams,TravelEase,Travel,39,11700.00,2024-12-12,2022-09-02,active,Lisbon,Portugal,36,M
+C035,iris.baker@email.com,Iris,Baker,EcoGoods,Retail,64,18200.00,2024-12-18,2021-10-20,active,Helsinki,Finland,35,F
+C036,jake.nelson@email.com,Jake,Nelson,FinanceHub,Finance,8,2400.00,2024-09-12,2023-06-24,active,Dubai,UAE,47,M
+C037,kylie.carter@email.com,Kylie,Carter,FashionFirst,Fashion,35,10200.00,2024-12-11,2022-11-08,active,Paris,France,26,F
+C038,liam.mitchell@email.com,Liam,Mitchell,BuildCo,Construction,5,1450.00,2024-05-30,2024-01-03,at_risk,Vancouver,Canada,49,M
+C039,mia.perez@email.com,Mia,Perez,HealthPlus,Healthcare,47,14200.00,2024-12-15,2022-07-16,active,Zurich,Switzerland,32,F
+C040,noah.roberts@email.com,Noah,Roberts,AutoParts,Automotive,2,510.00,2024-02-08,2023-12-15,inactive,Phoenix,USA,41,M
+C041,olivia.turner@email.com,Olivia,Turner,TechCorp,Technology,53,15900.00,2024-12-17,2022-05-21,active,Seattle,USA,30,F
+C042,peter.phillips@email.com,Peter,Phillips,FoodMart,Food & Beverage,29,8700.00,2024-12-10,2023-02-11,active,Amsterdam,Netherlands,44,M
+C043,quinn.campbell@email.com,Quinn,Campbell,RetailMax,Retail,9,2400.00,2024-10-28,2023-08-07,active,Edinburgh,UK,29,NB
+C044,ruby.parker@email.com,Ruby,Parker,TravelEase,Travel,41,12300.00,2024-12-13,2022-06-14,active,Rome,Italy,37,F
+C045,sean.evans@email.com,Sean,Evans,EcoGoods,Retail,61,18600.00,2024-12-16,2021-11-29,active,Copenhagen,Denmark,34,M
+C046,tina.edwards@email.com,Tina,Edwards,FinanceHub,Finance,13,3900.00,2024-11-05,2023-03-22,active,Singapore,Singapore,45,F
+C047,ulysses.collins@email.com,Ulysses,Collins,FashionFirst,Fashion,33,9600.00,2024-12-12,2022-10-17,active,Milan,Italy,27,M
+C048,vera.stewart@email.com,Vera,Stewart,BuildCo,Construction,7,2100.00,2024-08-25,2023-09-30,at_risk,Calgary,Canada,52,F
+C049,will.sanchez@email.com,Will,Sanchez,HealthPlus,Healthcare,50,15100.00,2024-12-14,2022-04-09,active,Barcelona,Spain,33,M
+C050,xena.morris@email.com,Xena,Morris,AutoParts,Automotive,4,920.00,2024-06-18,2024-03-12,at_risk,San Diego,USA,39,F
+C051,yusuf.rogers@email.com,Yusuf,Rogers,TechCorp,Technology,46,13800.00,2024-12-15,2022-08-24,active,New York,USA,31,M
+C052,zara.reed@email.com,Zara,Reed,FoodMart,Food & Beverage,72,21600.00,2024-12-19,2021-07-11,active,Stockholm,Sweden,40,F
+C053,adam.cook@email.com,Adam,Cook,RetailMax,Retail,11,3100.00,2024-11-22,2023-04-29,active,Oslo,Norway,28,M
+C054,bella.morgan@email.com,Bella,Morgan,TravelEase,Travel,38,11400.00,2024-12-11,2022-09-19,active,Prague,Czech Republic,35,F
+C055,carlos.bell@email.com,Carlos,Bell,EcoGoods,Retail,66,19800.00,2024-12-18,2021-12-23,active,Warsaw,Poland,36,M
+C056,diana.murphy@email.com,Diana,Murphy,FinanceHub,Finance,10,3000.00,2024-10-10,2023-05-15,active,Frankfurt,Germany,48,F
+C057,ethan.bailey@email.com,Ethan,Bailey,FashionFirst,Fashion,30,8700.00,2024-12-10,2022-11-26,active,Brussels,Belgium,26,M
+C058,fiona.rivera@email.com,Fiona,Rivera,BuildCo,Construction,6,1800.00,2024-07-08,2023-12-20,at_risk,Denver,USA,51,F
+C059,george.cooper@email.com,George,Cooper,HealthPlus,Healthcare,54,16200.00,2024-12-17,2022-03-05,active,Montreal,Canada,34,M
+C060,hannah.richardson@email.com,Hannah,Richardson,AutoParts,Automotive,1,180.00,2023-11-30,2023-10-18,inactive,Atlanta,USA,43,F
+C061,ian.cox@email.com,Ian,Cox,TechCorp,Technology,49,14700.00,2024-12-16,2022-06-28,active,San Francisco,USA,32,M
+C062,julia.howard@email.com,Julia,Howard,FoodMart,Food & Beverage,27,8100.00,2024-12-09,2023-01-14,active,Vienna,Austria,41,F
+C063,kevin.ward@email.com,Kevin,Ward,RetailMax,Retail,8,2200.00,2024-11-18,2023-07-26,active,Helsinki,Finland,30,M
+C064,laura.torres@email.com,Laura,Torres,TravelEase,Travel,43,12900.00,2024-12-14,2022-05-07,active,Athens,Greece,38,F
+C065,michael.peterson@email.com,Michael,Peterson,EcoGoods,Retail,63,19100.00,2024-12-17,2021-10-13,active,Reykjavik,Iceland,37,M
+C066,nina.gray@email.com,Nina,Gray,FinanceHub,Finance,14,4200.00,2024-11-12,2023-02-28,active,Luxembourg,Luxembourg,46,F
+C067,oscar.ramirez@email.com,Oscar,Ramirez,FashionFirst,Fashion,34,9900.00,2024-12-13,2022-08-31,active,Madrid,Spain,25,M
+C068,paula.james@email.com,Paula,James,BuildCo,Construction,9,2700.00,2024-09-20,2023-06-09,active,Seattle,USA,50,F
+C069,quincy.watson@email.com,Quincy,Watson,HealthPlus,Healthcare,52,15600.00,2024-12-15,2022-04-22,active,Dublin,Ireland,35,NB
+C070,rita.brooks@email.com,Rita,Brooks,AutoParts,Automotive,3,690.00,2024-05-15,2024-02-06,at_risk,Miami,USA,40,F
+C071,steve.kelly@email.com,Steve,Kelly,TechCorp,Technology,44,13200.00,2024-12-14,2022-07-03,active,Boston,USA,33,M
+C072,tanya.sanders@email.com,Tanya,Sanders,FoodMart,Food & Beverage,69,20700.00,2024-12-19,2021-08-19,active,Copenhagen,Denmark,42,F
+C073,uri.price@email.com,Uri,Price,RetailMax,Retail,12,3400.00,2024-11-30,2023-03-08,active,Tallinn,Estonia,27,M
+C074,violet.bennett@email.com,Violet,Bennett,TravelEase,Travel,40,12000.00,2024-12-12,2022-09-26,active,Vilnius,Lithuania,36,F
+C075,walter.wood@email.com,Walter,Wood,EcoGoods,Retail,65,19500.00,2024-12-18,2021-11-05,active,Riga,Latvia,39,M
+C076,xyla.barnes@email.com,Xyla,Barnes,FinanceHub,Finance,7,2100.00,2024-08-28,2023-10-12,at_risk,Portland,USA,47,F
+C077,yale.ross@email.com,Yale,Ross,FashionFirst,Fashion,37,10800.00,2024-12-11,2022-10-04,active,Lyon,France,28,M
+C078,zoe.henderson@email.com,Zoe,Henderson,BuildCo,Construction,8,2400.00,2024-09-05,2023-07-17,active,Montreal,Canada,49,F
+C079,alex.coleman@email.com,Alex,Coleman,HealthPlus,Healthcare,56,16800.00,2024-12-16,2022-02-21,active,Geneva,Switzerland,34,NB
+C080,beth.jenkins@email.com,Beth,Jenkins,AutoParts,Automotive,2,440.00,2024-03-28,2023-11-09,inactive,Dallas,USA,42,F
+C081,chad.perry@email.com,Chad,Perry,TechCorp,Technology,47,14100.00,2024-12-15,2022-05-14,active,Austin,USA,31,M
+C082,dina.powell@email.com,Dina,Powell,FoodMart,Food & Beverage,25,7500.00,2024-12-08,2023-04-02,active,Bergen,Norway,43,F
+C083,eric.long@email.com,Eric,Long,RetailMax,Retail,10,2900.00,2024-10-15,2023-08-23,active,Gothenburg,Sweden,29,M
+C084,faith.patterson@email.com,Faith,Patterson,TravelEase,Travel,42,12600.00,2024-12-13,2022-06-01,active,Budapest,Hungary,37,F
+C085,greg.hughes@email.com,Greg,Hughes,EcoGoods,Retail,60,18000.00,2024-12-17,2021-09-08,active,Bratislava,Slovakia,38,M
+C086,helen.flores@email.com,Helen,Flores,FinanceHub,Finance,15,4500.00,2024-11-20,2023-01-25,active,Ljubljana,Slovenia,45,F
+C087,ivan.washington@email.com,Ivan,Washington,FashionFirst,Fashion,32,9300.00,2024-12-10,2022-11-13,active,Zagreb,Croatia,26,M
+C088,jenny.butler@email.com,Jenny,Butler,BuildCo,Construction,5,1500.00,2024-06-25,2024-01-19,at_risk,Charlotte,USA,48,F
+C089,kyle.simmons@email.com,Kyle,Simmons,HealthPlus,Healthcare,48,14400.00,2024-12-14,2022-07-30,active,Sofia,Bulgaria,33,M
+C090,lisa.foster@email.com,Lisa,Foster,AutoParts,Automotive,1,290.00,2024-01-22,2023-12-01,inactive,Indianapolis,USA,41,F
+C091,mark.gonzales@email.com,Mark,Gonzales,TechCorp,Technology,50,15000.00,2024-12-16,2022-04-16,active,Chicago,USA,32,M
+C092,nancy.bryant@email.com,Nancy,Bryant,FoodMart,Food & Beverage,70,21000.00,2024-12-19,2021-06-24,active,Malmo,Sweden,44,F
+C093,owen.alexander@email.com,Owen,Alexander,RetailMax,Retail,13,3700.00,2024-12-05,2023-02-19,active,Tampere,Finland,28,M
+C094,penny.russell@email.com,Penny,Russell,TravelEase,Travel,45,13500.00,2024-12-15,2022-08-12,active,Bucharest,Romania,39,F
+C095,quentin.griffin@email.com,Quentin,Griffin,EcoGoods,Retail,58,17400.00,2024-12-18,2022-01-27,active,Belgrade,Serbia,36,M
+C096,rosa.diaz@email.com,Rosa,Diaz,FinanceHub,Finance,9,2700.00,2024-10-02,2023-09-05,active,Sarajevo,Bosnia,49,F
+C097,simon.hayes@email.com,Simon,Hayes,FashionFirst,Fashion,36,10500.00,2024-12-12,2022-07-20,active,Tirana,Albania,27,M
+C098,tess.myers@email.com,Tess,Myers,BuildCo,Construction,4,1200.00,2024-04-10,2023-11-27,inactive,Minneapolis,USA,52,F
+C099,umar.ford@email.com,Umar,Ford,HealthPlus,Healthcare,57,17100.00,2024-12-17,2022-03-19,active,Skopje,North Macedonia,35,M
+C100,vera.freeman@email.com,Vera,Freeman,AutoParts,Automotive,6,1380.00,2024-08-05,2023-10-29,at_risk,Columbus,USA,40,F
