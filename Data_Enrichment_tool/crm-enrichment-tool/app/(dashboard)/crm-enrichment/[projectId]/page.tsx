@@ -4,6 +4,7 @@ import { crmProjects } from "@/lib/db/schema"
 import { eq } from "drizzle-orm"
 import { notFound, redirect } from "next/navigation"
 import { ClusteringInterface } from "@/components/crm-enrichment/ClusteringInterface"
+import { QualitativeUpload } from "@/components/crm-enrichment/QualitativeUpload"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { ArrowLeft } from "lucide-react"
@@ -81,7 +82,7 @@ export default async function ProjectPage({
           </CardHeader>
           <CardContent>
             <p className="font-medium">
-              {project.createdAt ? new Date(project.createdAt).toLocaleDateString() : 'N/A'}
+              {project.createdAt ? new Date(project.createdAt).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' }) : 'N/A'}
             </p>
           </CardContent>
         </Card>
@@ -91,7 +92,7 @@ export default async function ProjectPage({
           </CardHeader>
           <CardContent>
             <p className="font-medium">
-              {project.updatedAt ? new Date(project.updatedAt).toLocaleDateString() : 'N/A'}
+              {project.updatedAt ? new Date(project.updatedAt).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' }) : 'N/A'}
             </p>
           </CardContent>
         </Card>
@@ -114,6 +115,12 @@ export default async function ProjectPage({
           </CardContent>
         </Card>
       )}
+
+      {/* Qualitative Research Section */}
+      <QualitativeUpload
+        projectId={project.id}
+        existingFiles={(project.qualitativeFiles as any) || []}
+      />
     </div>
   )
 }
