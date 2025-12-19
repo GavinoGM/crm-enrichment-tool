@@ -18,7 +18,7 @@ AI-powered CRM data enrichment with behavioral clustering, qualitative research 
 - **Database**: Vercel Postgres + Drizzle ORM
 - **Auth**: NextAuth.js v5 (Google OAuth)
 - **Storage**: Vercel Blob
-- **AI**: Claude 3.5 Sonnet (Anthropic)
+- **AI**: Groq Llama 3.1 8B (Clustering) + Claude (Advanced reasoning)
 - **UI**: shadcn/ui + Tailwind CSS v4
 - **Language**: TypeScript
 
@@ -50,8 +50,9 @@ NEXTAUTH_URL=http://localhost:3000
 GOOGLE_CLIENT_ID=
 GOOGLE_CLIENT_SECRET=
 
-# Anthropic
+# AI Models
 ANTHROPIC_API_KEY=
+GROQ_API_KEY=
 
 # Social APIs (Optional)
 FORUMSCOUT_API_KEY=
@@ -81,11 +82,17 @@ ENCRYPTION_KEY=your-32-character-secret-key-he
 5. Add authorized redirect URI: \`http://localhost:3000/api/auth/callback/google\`
 6. Copy Client ID and Secret to your \`.env.local\`
 
-### 6. Get Anthropic API Key
+### 6. Get AI API Keys
 
+**Groq API Key (for clustering - fast & cheap):**
+1. Go to [Groq Console](https://console.groq.com/)
+2. Create an account and generate an API key
+3. Copy to \`GROQ_API_KEY\` in your \`.env.local\`
+
+**Anthropic API Key (optional - for advanced reasoning):**
 1. Go to [Anthropic Console](https://console.anthropic.com/)
 2. Create an API key
-3. Copy to your \`.env.local\`
+3. Copy to \`ANTHROPIC_API_KEY\` in your \`.env.local\`
 
 ### 7. Generate NextAuth Secret
 

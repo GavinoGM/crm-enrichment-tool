@@ -155,7 +155,7 @@ export default function NewProjectPage() {
               <div>
                 <h3 className="text-lg font-semibold mb-2">Analyzing Your CRM Data</h3>
                 <p className="text-sm text-muted-foreground max-w-md">
-                  Claude is analyzing your customer data to identify behavioral clusters. This may take a minute...
+                  AI is analyzing your customer data to identify behavioral clusters. This usually takes just a few seconds...
                 </p>
               </div>
             </div>

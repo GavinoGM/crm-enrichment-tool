@@ -3,7 +3,7 @@ import { auth } from '@/lib/auth'
 import { db } from '@/lib/db'
 import { crmProjects } from '@/lib/db/schema'
 import { eq } from 'drizzle-orm'
-import { refineClusters } from '@/lib/claude/clustering'
+import { refineClusters } from '@/lib/groq/clustering'
 
 export async function POST(request: NextRequest) {
   try {
@@ -37,7 +37,7 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'No clusters found' }, { status: 400 })
     }
 
-    // Refine clusters using Claude
+    // Refine clusters using Groq
     const refinedClusters = await refineClusters(project.clusters as any, action, {
       clusterIds,
       newName,

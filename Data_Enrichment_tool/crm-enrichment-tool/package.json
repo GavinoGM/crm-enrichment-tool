@@ -25,6 +25,7 @@
     "drizzle-kit": "^0.31.8",
     "drizzle-orm": "^0.45.1",
     "geist": "^1.5.1",
+    "groq-sdk": "^0.37.0",
     "lucide-react": "^0.562.0",
     "mammoth": "^1.11.0",
     "nanoid": "^5.1.6",

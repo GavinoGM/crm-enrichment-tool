@@ -4,7 +4,7 @@ import { db } from '@/lib/db'
 import { crmProjects } from '@/lib/db/schema'
 import { eq } from 'drizzle-orm'
 import { parseCrmFile } from '@/lib/crm/parser'
-import { generateClusters } from '@/lib/claude/clustering'
+import { generateClusters } from '@/lib/groq/clustering'
 
 export async function POST(request: NextRequest) {
   try {
@@ -43,7 +43,7 @@ export async function POST(request: NextRequest) {
       const fileBuffer = Buffer.from(await fileResponse.arrayBuffer())
       const parsed = await parseCrmFile(fileBuffer)
 
-      // Generate clusters using Claude
+      // Generate clusters using Groq (Llama 3.1 8B)
       const clusters = await generateClusters({
         data: parsed.rows,
         columnMapping: columnMapping || project.columnMapping || {},
