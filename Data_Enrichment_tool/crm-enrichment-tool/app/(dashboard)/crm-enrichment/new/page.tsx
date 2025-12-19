@@ -32,7 +32,10 @@ export default function NewProjectPage() {
     setStep('mapping')
   }
 
-  const handleMappingComplete = async (mapping: Record<string, CrmColumnType>) => {
+  const handleMappingComplete = async (
+    mapping: Record<string, CrmColumnType>,
+    analysisMode?: 'quick_sample' | 'analyze_all'
+  ) => {
     if (!uploadData) return
 
     setStep('analyzing')
@@ -48,6 +51,7 @@ export default function NewProjectPage() {
           analysisOptions: {
             numClusters: 5,
             focusOn: 'behavior',
+            analysisMode: analysisMode || 'quick_sample',
           },
         }),
       })

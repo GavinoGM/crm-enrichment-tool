@@ -1,6 +1,9 @@
 import * as XLSX from 'xlsx'
 import { Buffer } from 'buffer'
 
+// Maximum rows supported for processing
+export const MAX_ROWS = 500_000
+
 export interface ParsedCrmData {
   rows: Record<string, any>[]
   columns: string[]

@@ -4,6 +4,7 @@ import { useState } from "react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
+import { Switch } from "@/components/ui/switch"
 import {
   Select,
   SelectContent,
@@ -11,14 +12,14 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select"
-import { CheckCircle2, AlertCircle } from "lucide-react"
+import { CheckCircle2, AlertCircle, Zap, Database } from "lucide-react"
 import type { CrmColumnType } from "@/lib/crm/column-detector"
 
 interface ColumnMappingEditorProps {
   columns: string[]
   detectedMapping: Record<string, string>
   preview: Record<string, any>[]
-  onComplete: (mapping: Record<string, CrmColumnType>) => void
+  onComplete: (mapping: Record<string, CrmColumnType>, analysisMode?: 'quick_sample' | 'analyze_all') => void
 }
 
 const COLUMN_TYPES: { value: CrmColumnType; label: string }[] = [
@@ -53,6 +54,7 @@ export function ColumnMappingEditor({
   const [mapping, setMapping] = useState<Record<string, CrmColumnType>>(
     detectedMapping as Record<string, CrmColumnType>
   )
+  const [useQuickSample, setUseQuickSample] = useState(true)
 
   const handleMappingChange = (column: string, type: CrmColumnType) => {
     setMapping({ ...mapping, [column]: type })
@@ -63,7 +65,7 @@ export function ColumnMappingEditor({
   }
 
   const handleContinue = () => {
-    onComplete(mapping)
+    onComplete(mapping, useQuickSample ? 'quick_sample' : 'analyze_all')
   }
 
   return (
@@ -137,6 +139,33 @@ export function ColumnMappingEditor({
             </div>
           </div>
         )}
+
+        <div className="border rounded-lg p-4 space-y-3">
+          <div className="flex items-center justify-between">
+            <div className="space-y-0.5">
+              <div className="flex items-center gap-2">
+                {useQuickSample ? (
+                  <Zap className="h-4 w-4 text-primary" />
+                ) : (
+                  <Database className="h-4 w-4 text-primary" />
+                )}
+                <label htmlFor="analysis-mode" className="text-sm font-medium">
+                  {useQuickSample ? 'Quick Sample' : 'Analyze All'}
+                </label>
+              </div>
+              <p className="text-xs text-muted-foreground">
+                {useQuickSample
+                  ? '1,000 random rows, ~5 seconds (Recommended)'
+                  : 'All rows, may take longer for large datasets'}
+              </p>
+            </div>
+            <Switch
+              id="analysis-mode"
+              checked={!useQuickSample}
+              onCheckedChange={(checked) => setUseQuickSample(!checked)}
+            />
+          </div>
+        </div>
 
         <Button onClick={handleContinue} className="w-full" size="lg">
           Continue to Clustering

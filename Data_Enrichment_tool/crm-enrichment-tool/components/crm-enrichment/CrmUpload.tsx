@@ -56,9 +56,9 @@ export function CrmUpload({ projectName, projectDescription, onUploadComplete }:
       return
     }
 
-    // Validate file size (50MB)
-    if (file.size > 50 * 1024 * 1024) {
-      setError('File is too large. Maximum size is 50MB.')
+    // Validate file size (100MB)
+    if (file.size > 100 * 1024 * 1024) {
+      setError('File is too large. Maximum size is 100MB.')
       return
     }
 
@@ -97,7 +97,7 @@ export function CrmUpload({ projectName, projectDescription, onUploadComplete }:
       <CardHeader>
         <CardTitle>Upload CRM File</CardTitle>
         <CardDescription>
-          Upload your CRM data in CSV or Excel format (max 50MB, up to 100k rows)
+          Upload your CRM data in CSV or Excel format. Limits: 500k rows max, 100MB file size. Large files will use intelligent sampling for AI analysis.
         </CardDescription>
       </CardHeader>
       <CardContent>
@@ -142,7 +142,7 @@ export function CrmUpload({ projectName, projectDescription, onUploadComplete }:
                   </label>
                 </p>
                 <p className="text-xs text-muted-foreground">
-                  Supported formats: CSV, XLSX (max 50MB)
+                  Supported formats: CSV, XLSX (max 100MB)
                 </p>
               </div>
             </div>

@@ -9,6 +9,7 @@ export interface ClusteringOptions {
   columnMapping: Record<string, string>
   numClusters?: number
   focusOn?: 'behavior' | 'demographics' | 'both'
+  analysisMode?: 'quick_sample' | 'analyze_all'
 }
 
 export interface ClusterResult {
@@ -22,15 +23,27 @@ export interface ClusterResult {
 }
 
 /**
+ * Random sample from array for statistical representativeness
+ */
+function randomSample<T>(array: T[], size: number): T[] {
+  const shuffled = [...array].sort(() => Math.random() - 0.5)
+  return shuffled.slice(0, size)
+}
+
+/**
  * Generate behavioral clusters using Groq Llama 3.1
  */
 export async function generateClusters(
   options: ClusteringOptions
 ): Promise<ClusterResult[]> {
-  const { data, columnMapping, numClusters = 5, focusOn = 'behavior' } = options
+  const { data, columnMapping, numClusters = 5, focusOn = 'behavior', analysisMode = 'quick_sample' } = options
 
-  // Sample data if too large (use up to 1000 rows for clustering)
-  const sampleData = data.length > 1000 ? data.slice(0, 1000) : data
+  // Sample data based on analysis mode
+  const sampleData = analysisMode === 'analyze_all'
+    ? data
+    : data.length > 1000
+      ? randomSample(data, 1000)
+      : data
 
   // Build prompt for Groq
   const prompt = buildClusteringPrompt(sampleData, columnMapping, numClusters, focusOn)

@@ -27,10 +27,10 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'Project name is required' }, { status: 400 })
     }
 
-    // Validate file size (max 50MB)
-    if (file.size > 50 * 1024 * 1024) {
+    // Validate file size (max 100MB)
+    if (file.size > 100 * 1024 * 1024) {
       return NextResponse.json(
-        { error: 'File too large. Maximum size is 50MB' },
+        { error: 'File too large. Maximum size is 100MB' },
         { status: 400 }
       )
     }

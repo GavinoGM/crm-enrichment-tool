@@ -49,6 +49,7 @@ export async function POST(request: NextRequest) {
         columnMapping: columnMapping || project.columnMapping || {},
         numClusters: analysisOptions?.numClusters || 5,
         focusOn: analysisOptions?.focusOn || 'behavior',
+        analysisMode: analysisOptions?.analysisMode || 'quick_sample',
       })
 
       // Store clusters in database
